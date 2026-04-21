@@ -89,6 +89,24 @@
         command to save the changes. Finally you can use push command to push the changes to github. 
         Of course there is more to it but this is the basic flow.
 
+        1. git add . -> to add the code to repo
+        2. git status -> you will see that the codes are staged
+        3. git restore --staged <file>... -> this code can be used to unstage the files
+        4. git commit -m "MESSAGE" -> -m means that 
+
+    *** Stage ***
+        Stage is a way to tell git to track a particular file or folder. 
+        You can use the following command to stage a file:
+        
+            git init
+            git add <file> <file2>
+            git status
+
+        Here we are initializing the repository and adding a file to the repository. 
+        Then we can see that the file is now being tracked by git. 
+        Currently our files are in staging area, this means that we have not yet committed the changes 
+        but are ready to be committed.
+
 
 
 
