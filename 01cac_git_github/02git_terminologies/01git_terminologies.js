@@ -107,6 +107,67 @@
         Currently our files are in staging area, this means that we have not yet committed the changes 
         but are ready to be committed.
 
+    *** Commit ***
+
+            git commit -m "commit message"
+            git status
+
+        Here we are committing the changes to the repository. 
+        We can see that the changes are now committed to the repository. 
+        The -m flag is used to add a message to the commit. 
+        This message is a short description of the changes that were made. 
+        You can use this message to remember what the changes were. 
+        Missing the -m flag will result in an action that opens your default settings editor, 
+        which is usually VIM. We will change this to vscode in the next section.
+
+
+    *** Logs ***
+        
+            git log
+
+        This command will show you the history of your repository. 
+        It will show you all the commits that were made to the repository.
+        You can use the --oneline flag to show only the commit message. 
+        This will make the output more compact and easier to read.
+
+            git log --oneline
+
+        ☕️ - Check git log docs
+
+            Atomic commits are a way to make sure that each commit is a self-contained unit of work. 
+            This means that if one commit fails, you can always go back to a previous commit and fix the issue. 
+            This is important for maintaining a clean and organized history in your repository.
+
+            Keep commits centric to one feature, one component or one fix, focused on one thing.
+
+            Commit Messages: Present or Past Commit Message
+                Depends {Present Tense, Imperative}
+                give order to codebase
+                don't care
+
+                e.g : add footer, add header to codebase
+            
+            Commit Message Examples:
+
+                feat: Add search functionality with keyword filtering
+                fix: Resolve null pointer exception in user profile update
+                refactor: Simplify authentication logic for better readability
+                docs: Update API usage section in README
+                test: Add unit tests for payment gateway integration
+                chore: Upgrade dependencies to latest stable versions
+
+            These follow the Conventional Commits style, which makes history easier to read and 
+            automates changelog generation.
+
+    *** change default code editor ***
+        You can change the default code editor in your system to vscode. 
+        To do this, you can use the following command:
+
+            git config --global core.editor "code --wait"
+
+    
+
+
 
 
 
