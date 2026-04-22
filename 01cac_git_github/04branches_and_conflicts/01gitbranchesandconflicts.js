@@ -115,7 +115,7 @@
     *** Delete a branch ***
         You can delete a branch using the following command:
 
-            git branch -d <branch-name>
+            git branch -D <branch-name>
 
     *** Checkout a branch ***
         You can checkout a branch using the following command:
