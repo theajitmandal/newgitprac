@@ -1,1 +1,2 @@
-git conflit add
+learn git conflicts
+
