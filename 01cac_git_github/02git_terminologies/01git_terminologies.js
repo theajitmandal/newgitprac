@@ -165,6 +165,31 @@
 
             git config --global core.editor "code --wait"
 
+    *** gitignore ***
+        Gitignore is a file that tells git which files and folders to ignore. 
+        It is a way to prevent git from tracking certain files or folders. 
+        You can create a gitignore file and add list of files and folders to ignore by using the following command:
+
+        Example:
+            .gitignore
+            node_modules
+            .env
+            .vscode
+
+        Now, when you run the git status command, it will not show the node_modules and .vscode folders as 
+        being tracked by git.
+
+    *** .gitkeep ***
+        Sometime we make certain folder in which we may add code later so to track those empty folder, we make
+        new file named '.gitkeep' inside that folder to say git to track that folder because by default git
+        doesn't track the empty folders.
+
+    *** Conclusion ***
+        In this section, we have learned about the basics of git and how to use it to track changes to 
+        your files and folders. We have also learned about the different commands that you can use to 
+        interact with your repository, such as init, add, commit, log, etc By the end of this section, 
+        you should have a good understanding of how to use git and how to use it effectively to manage your code.
+
     
 
 
